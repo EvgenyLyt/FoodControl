@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="none">
+        <group android:id = "@+id/main_funcs">
+            <item
+                android:id="@+id/nav_new_recipe"
+                android:icon="@drawable/new_recipe"
+                android:title="@string/icon_new_recipe" />
+            <item
+                android:id="@+id/nav_recipe_categories"
+                android:icon="@drawable/recipe_categories"
+                android:title="@string/icon_recipe_categories" />
+            <item
+                android:id="@+id/nav_all_recipes"
+                android:icon="@drawable/all_recipes"
+                android:title="@string/icon_all_recipes" />
+            <item
+                android:id="@+id/nav_food_basket"
+                android:icon="@drawable/food_basket"
+                android:title="@string/icon_food_basket" />
+        </group>
+        <group android:id = "@+id/add_funcs">
+            <item
+                android:id="@+id/nav_table_weights"
+                android:icon="@drawable/table_weights"
+                android:title="@string/icon_table_weights" />
+            <item
+                android:id="@+id/nav_cooking_time"
+                android:icon="@drawable/cooking_time"
+                android:title="@string/icon_cooking_time" />
+        </group>
+        <group android:id = "@+id/exit_func">
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/exit"
+                android:title="@string/icon_exit" />
+        </group>
+    </group>
+
+</menu>

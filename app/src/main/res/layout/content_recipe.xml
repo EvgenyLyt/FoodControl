@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.RecipeActivity"
+    tools:showIn="@layout/activity_recipe"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/text_recipe_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLightBrown"
+                android:gravity="center|bottom"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_big"
+                android:fontFamily="serif"
+                android:textStyle="bold|italic" />
+            <TextView
+                android:id="@+id/text_recipe_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="serif"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/text_recipe_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="serif"
+                android:textColor="@color/colorBlack"
+                android:text="@string/time_recipe"
+                android:textSize="@dimen/text_size"
+                android:textStyle="italic" />
+            <ListView
+                android:id="@+id/text_recipe_ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <ImageButton
+                android:id="@+id/btn_add_to_basket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:padding="@dimen/pad"
+                android:background="@drawable/basket"/>
+            <TextView
+                android:id="@+id/text_recipe_instruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/pad"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="serif"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

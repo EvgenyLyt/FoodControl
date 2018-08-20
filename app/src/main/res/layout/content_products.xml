@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.ProductsActivity"
+    tools:showIn="@layout/activity_products">
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edit_name_fridge_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_name_product_style"
+            android:hint="@string/placeholder"
+            android:fontFamily="serif"
+            android:textColor="@android:color/black"
+            android:inputType="textPersonName"
+            android:maxLength="30"
+            android:padding="@dimen/edit_text_padding"
+            android:textSize="@dimen/text_size" />
+        <ImageButton
+            android:id="@+id/clear_name_fridge_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical|center_horizontal"
+            android:layout_marginRight="@dimen/pad"
+            android:background="@android:drawable/ic_delete" />
+
+    </FrameLayout>
+    <TextView
+        android:id="@+id/back_to_list_fridge_products"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textStyle="bold|italic"
+        android:fontFamily="serif"
+        android:paddingTop="@dimen/padding"
+        android:paddingBottom="@dimen/padding"
+        android:background="@color/colorLightOrange"
+        android:clickable="true"
+        android:focusable="true"
+        android:drawableStart="@android:drawable/ic_menu_revert"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="@dimen/text_big" />
+    <ListView
+        android:id="@+id/list_fridge_products"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+</LinearLayout>

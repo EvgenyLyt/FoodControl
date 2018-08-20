@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:weightSum="11"
+android:clickable="false"
+android:descendantFocusability="blocksDescendants"
+android:focusable="false"
+android:focusableInTouchMode="false"
+android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/btn_check_product"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center"
+        android:layout_weight="5"
+        android:scaleX="1.25"
+        android:scaleY="1.25"
+        android:theme="@style/CheckItem">
+    </CheckBox>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="false"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:id="@+id/product_item">
+
+        <TextView
+            android:id="@+id/text_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_size"
+            android:fontFamily="serif"
+            android:textColor="@android:color/black"
+            android:textStyle="bold|italic">
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_product_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:fontFamily="serif"
+            android:textColor="@color/colorGray"
+            android:textSize="@dimen/text_small">
+        </TextView>
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/btn_product_favs"
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        app:srcCompat="@mipmap/btn_star_big_off" >
+    </ImageButton>
+</LinearLayout>

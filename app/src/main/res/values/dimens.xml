@@ -1,0 +1,12 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_height">128dp</dimen>
+    <dimen name="edit_text_padding">10dp</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="text_big">22sp</dimen>
+    <dimen name="text_small">15sp</dimen>
+    <dimen name="padding">8dp</dimen>
+    <dimen name="pad">5dp</dimen>
+    <dimen name="edit_text_length">30</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

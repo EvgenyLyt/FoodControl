@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="by.bsuir.evgeny.foodcontrol">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ProductsActivity"
+            android:label="@string/title_activity_products"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="by.bsuir.evgeny.foodcontrol.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.AddRecipeActivity"
+            android:label="@string/title_activity_add_recipe"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="by.bsuir.evgeny.foodcontrol.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ListRecipesActivity"
+            android:label="@string/title_activity_list_recipes"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="by.bsuir.evgeny.foodcontrol.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.BasketActivity"
+            android:label="@string/title_activity_basket"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="by.bsuir.evgeny.foodcontrol.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.WeightActivity"
+            android:label="@string/title_activity_weight"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="by.bsuir.evgeny.foodcontrol.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.RecipeActivity"
+            android:label="@string/title_activity_recipe"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="by.bsuir.evgeny.foodcontrol.activity.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
